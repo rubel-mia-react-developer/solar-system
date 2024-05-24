@@ -1,0 +1,246 @@
+/* ==============common css part start=============== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ==============common css part end=============== */
+/* ==============common body part =================== */
+body{
+background: url(../img/4k-ultra-hd-galaxy.jpg);
+}
+/* ======================sun start*/
+.sun{
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#f09819, #ff512f);
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ======================sun end*/
+/* ======================mercury start*/
+.mercuryOrbit{
+    width: 150px;
+    height: 150px;
+}
+.mercury{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(#d0b8e3, #73739b, #c0b3d3, #b5a7a7);
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    transform: translate(-50%, 50%);
+    animation: orbit1 4s linear infinite;
+}
+@keyframes orbit1{
+    from{
+        transform: rotate(0deg) translateX(75px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(75px) rotate(-3600deg);
+    }
+}
+/* ======================mercury end*/
+/* ======================orbit */
+.mercuryOrbit, .venusOrbit, .earthOrbit, .marsOrbit, .jupiterOrbit, .saturnOrbit, .uranusOrbit, .naptuneOrbit{
+    border: 2px dotted #dd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: transparent;
+}
+/* ======================venus part start*/
+.venusOrbit{
+    width: 210px;
+    height: 210px;
+}
+.venus{
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(#728fa1, #9aadca, #bacfe4, #efefef);
+    border-radius: 50%;
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    animation: orbit2 8s linear infinite;
+}
+@keyframes orbit2{
+    from{
+        transform: rotate(0deg) translateX(105px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(105px) rotate(-360deg);
+    }
+}
+/* ======================venus part end*/
+/* ======================earth part start*/
+.earthOrbit{
+    width: 300px;
+    height: 300px;
+}
+.earth{
+    width: 40px;
+    height: 40px;
+    background: url(../img/earth\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    animation: orbit3 12s linear infinite;
+}
+@keyframes orbit3{
+    from{
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+/* ======================earth part end*/
+/* ======================mars part start*/
+.marsOrbit{
+    width: 400px;
+    height: 400px;
+}
+.mars{
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(#9e8476, #b07a67, #6e4334, #ff9d6f, #663926, #8e6a5a);
+    border-radius: 50%;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -505);
+    animation: orbit4 11s linear infinite;
+}
+@keyframes orbit4{
+    from{
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+}
+/* ======================mars part end*/
+/* ======================jupiter part start*/
+.jupiterOrbit{
+    width: 500px;
+    height: 500px;
+}
+.jupiter{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#8ec1db, #93afd7, #81b9ea, #d39c7e, #90614d, #c88b3a);
+    border-radius: 50%;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    animation: orbit5 6s linear infinite;
+}
+@keyframes orbit5{
+    from{
+        transform: rotate(0deg) translateX(250px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(250px) rotate(-360deg);
+    }
+}
+/* ======================jupiter part end*/
+/* ======================msaturn part start*/
+.saturnOrbit{
+    width: 630px;
+    height: 630px;
+}
+.saturn{
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(#8bbce7, #b0dbec, #7286a4, #c5ab6e, #c3a171);
+    border-radius: 50%;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    animation: orbit6 12s linear infinite;
+}
+@keyframes orbit6{
+    from{
+        transform: rotate(0deg) translateX(315px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(315px) rotate(-360deg);
+    }
+}
+.saturnRing{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px double #c5ab6e;
+    position: relative;
+    top: -10%;
+    left: -10%;
+    background: transparent;
+}
+/* ======================saturn part end*/
+/* ======================uranus part start*/
+.uranusOrbit{
+    width: 750px;
+    height: 750px;
+}
+.uranus{
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(#7095ce, #b1ecf0, #94bbbe, #658646);
+    border-radius: 50%;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    animation: orbit7 18s linear infinite;
+}
+@keyframes orbit7{
+    from{
+        transform: rotate(0deg) translateX(375px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(375px) rotate(-360deg);
+    }
+}
+/* ======================uranus end*/
+/* ======================naptune start*/
+.naptuneOrbit{
+    width: 850px;
+    height: 850px;
+}
+.naptune{
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(#8acced, #9ad3c6, #6aabd4, #6081ff, #89f4ff);
+    border-radius: 50%;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    animation: orbit8 17s linear infinite;
+}
+@keyframes orbit8{
+    from{
+        transform: rotate(0deg) translateX(421px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(421px) rotate(-360deg);
+    }
+}
+/* ======================naptune end*/
